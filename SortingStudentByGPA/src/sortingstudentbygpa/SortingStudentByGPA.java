@@ -31,7 +31,7 @@ public class SortingStudentByGPA implements Comparator <Student> {
                 j--;
             }
  
-            if (i <= j) {//меняем местами
+            if (i <= j) {
                 Student temp = students[i];
                 students[i] = students[j];
                 students[j] = temp;
@@ -40,7 +40,7 @@ public class SortingStudentByGPA implements Comparator <Student> {
             }
         }
  
-        // вызов рекурсии для сортировки левой и правой части
+        
         if (low < j)
             quickSort(students, low, j);
  
